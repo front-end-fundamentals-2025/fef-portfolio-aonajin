@@ -1,0 +1,29 @@
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+/*   HEADER   */
+
+#logo {
+    font-family: 'Nunito', serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    padding: 4px;
+    display: inline;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+}
+
+/*   FOOTER   */
+
+footer {
+    margin-top: 3rem;
+}
