@@ -53,3 +53,15 @@ nav a {
 .content {
     margin-top: 80px; 
 }
+
+body {
+    background-image: linear-gradient(to right, red, blue);
+}
+
+/*   FORM, contact page   */
+.contact-form-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
