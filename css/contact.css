@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    padding-left: 2%;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -45,7 +46,7 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px 15px;
 }
 
@@ -55,7 +56,7 @@ nav a {
 }
 
 body {
-    background-image: linear-gradient(to right, red, blue);
+    background-image: linear-gradient(to right, #f5f3f4, #faf9f9);
 }
 
 /*   FORM, contact page   */
@@ -64,4 +65,44 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.contact-form-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    border: none;
+}
+
+.contact-inputs {
+    width: 200px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    color: white;
+    border-radius: 50px;
+}
+
+#message {
+    padding-top: 7%;
+}
+
+.contact-form-left button {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 13px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #0b090a, #161a1d);
+    cursor: pointer;
+}
+
+footer {
+    padding-top: 30%;
+    padding-bottom: 2%;
 }

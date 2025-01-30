@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+    padding-left: 2%;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -45,11 +46,28 @@ nav a {
     text-decoration: none;
     color: black;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
     padding: 10px 15px;
 }
 
 /* make sure content doesn't interrupt nav bar*/
 .content {
     margin-top: 80px; 
+}
+
+.portrait {
+    height: 30rem;
+    width: auto;
+    float: right;
+    padding-right: 10%;
+}
+
+.signature {
+    height: 15rem;
+    width: auto;
+}
+
+footer {
+    padding-top: 30%;
+    padding-bottom: 2%;
 }
