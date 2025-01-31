@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     padding-left: 2%;
+    padding-right: 2%;
     box-sizing: border-box;
     font-family: 'Fira Sans', sans-serif;
 }
@@ -19,7 +20,7 @@ nav {
     display: flex;
     align-items: center; 
     justify-content: space-between; 
-    padding: 0 20px; 
+    padding: 2%; 
 }
 
 .logo {
@@ -33,7 +34,7 @@ nav ul {
     display: flex;
     gap: 20px; 
     margin: 0;
-    padding: 0;
+    padding-right: 4%;
 }
 
 /* list items */
@@ -55,6 +56,7 @@ nav a {
     margin-top: 80px; 
 }
 
+/*   CONTACT PAGE   */
 .portrait {
     height: 30rem;
     width: auto;
@@ -67,7 +69,59 @@ nav a {
     width: auto;
 }
 
+/*   FOOTER   */
 footer {
     padding-top: 30%;
     padding-bottom: 2%;
+}
+
+/* grid layout WORK */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* responsive grid */
+    gap: 20px;
+    padding: 20px;
+    align-items: start;
+}
+
+.portfolio-item {
+    background: #f5f3f4;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.03);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 200%;
+    object-fit: contain;
+}
+
+.portfolio-item h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/*   PORTFOLIO WORK img   */
+.press-image-lit {
+    height: 40rem; 
+    width: auto;
+    float: right;
+    padding-bottom: 2%;
+}
+
+h1 {
+    padding-bottom: 2%;
+}
+
+p {
+    padding-bottom: 3%;
 }
