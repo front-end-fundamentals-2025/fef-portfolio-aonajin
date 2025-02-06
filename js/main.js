@@ -15,4 +15,4 @@ document.addEventListener("DOMContentLoaded", function () {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
-//back to top function
+//back to top
