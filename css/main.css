@@ -1,0 +1,234 @@
+/*   main work   */
+
+* {
+  margin: 0;
+  padding: 0;
+  padding-left: 2%;
+  padding-right: 2%;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+}
+
+/* nav bar */
+nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2%;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+/* nav menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding-right: 4%;
+}
+
+/* list items */
+nav li {
+  display: inline-block;
+}
+
+/* links */
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 10px 15px;
+}
+
+/* make sure content doesn't interrupt nav bar*/
+.content {
+  margin-top: 80px;
+}
+
+/*   CONTACT PAGE   */
+.portrait {
+  height: 30rem;
+  width: auto;
+  float: right;
+  padding-right: 10%;
+}
+
+.signature {
+  height: 15rem;
+  width: auto;
+}
+
+/*   FOOTER   */
+footer {
+  padding-top: 30%;
+  padding-bottom: 2%;
+}
+
+/* grid layout WORK */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* responsive grid */
+  gap: 20px;
+  padding: 20px;
+  align-items: start;
+}
+
+.portfolio-item {
+  background: #f5f3f4;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.03);
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: 200%;
+  object-fit: contain;
+}
+
+.portfolio-item h2 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/*   PORTFOLIO WORK img   */
+.press-image-lit {
+  height: 40rem;
+  width: auto;
+  float: right;
+  padding-bottom: 2%;
+}
+
+h1 {
+  padding-bottom: 2%;
+}
+
+p {
+  padding-bottom: 3%;
+}
+
+/*  back to top BUTTON   */
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.back-to-top:hover {
+  background: white;
+}
+
+.back-to-top.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  animation: bounce 0.6s ease-in-out;
+}
+
+.back-to-top.hide {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* BACK TO TOP BUTTON CLEAN VERSION */
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  z-index: 1000;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade out animation */
+@keyframes fadeOutDown {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+#backToTop.show {
+  animation: fadeInUp 0.3s forwards;
+  pointer-events: auto;
+}
+
+#backToTop.hide {
+  animation: fadeOutDown 0.3s forwards;
+  pointer-events: none;
+}
